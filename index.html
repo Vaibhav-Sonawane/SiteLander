@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE BUILDER</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Css and Js -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!-- logo -->
+    <link rel="icon" href="./Assets/images/hexagon-logo-white.png">
+
+    <!-- icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom">
+  <a class="navbar-brand p-2 fw-bold" href="#"><img class="logo img-fluid" src="./Assets/images/hexagon-logo-white.png" alt="logo">PAGE BUILDER</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+          Services
+        </a>
+        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./components/singlePage.html">Single Page Landing Sites</a>
+          <a class="dropdown-item" href="#" disabled>Multi Page Landing Sites</a>
+          <a class="dropdown-item" href="#" disabled>Complex Websites</a>
+          <a class="dropdown-item" href="#contact" >Unique Websites</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- introduction -->
+<section class="" style="position: relative;" id="home">
+      <!-- The video -->
+<video autoplay muted loop class="img-fluid" id="bg-video" style="position: absolute;">
+  <source src="./Assets/images/videoplayback.webm" type="video/mp4">
+</video>
+
+
+    <div class="d-flex justify-content-center align-items-center" style="height:100vh;">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center text-white" id="head1">Welcome to</h1>
+            <h1 class="text-center fw-bolder text-white" id="head2">PAGE BUILDER</h1>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- about us -->
+ <section class="container-fluid bg-body-secondary" id="services">
+    <h2 class="text-center fw-bolder fs-1 p-4">Our services include:</h2>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- card1 -->
+            <div class="col col-md-3">
+                <div class="card text-white overlay-card">
+                  <img src="./Assets/images/c1.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 p-3">
+                    <h3 class="card-title fw-bold text-center">Single Page <br> Landing Sites</h3>
+                    <p class="card-text">Clean and fast-loading single-page websites ideal for portfolios, product launches, and quick campaigns.</p>
+                    <a href="./components/singlePage.html" class="btn btn-light btn-sm mt-2">Learn More</a>
+                  </div>
+                </div>
+            </div>
+
+            <!-- card2 -->
+            <div class="col col-md-3">
+                <div class="card text-white overlay-card">
+                  <img src="./Assets/images/c2.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 p-3">
+                    <h3 class="card-title fw-bold text-center">Multi Page  <br> Landing Sites</h3>
+                    <p class="card-text">Professionally structured sites with multiple pages to showcase services, testimonials, and more.</p>
+                    <a href="#" class="btn btn-light btn-sm mt-2" disabled>Learn More</a>
+                  </div>
+                </div>
+            </div>
+
+            <!-- card3 -->
+            <div class="col col-md-3">
+                <div class="card text-white overlay-card">
+                  <img src="./Assets/images/c3.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 p-3">
+                    <h3 class="card-title fw-bold text-center">Complex Websites</h3>
+                    <p class="card-text">Feature-rich, scalable websites tailored for dynamic businesses and growing platforms.</p>
+                    <a href="#" class="btn btn-light btn-sm mt-2" disabled>Learn More</a>
+                  </div>
+                </div>
+            </div>
+
+            <!-- card4 -->
+            <div class="col col-md-3">
+                <div class="card text-white overlay-card">
+                  <img src="./Assets/images/c4.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 p-3">
+                    <h3 class="card-title fw-bold text-center">Unique Websites</h3>
+                    <p class="card-text">Custom-designed, eye-catching websites that stand out and reflect your unique brand identity.</p>
+                    <a href="#contact" class="btn btn-light btn-sm mt-2" >Learn More</a>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+ </section>
+
+ <!-- form section-->
+<section class="text-center py-5 bg-body-secondary" id="contact">
+  <h2>Interested in designing unique websites?</h2>
+  <p>Connect with us</p>
+
+  <form action="#" method="get" class="d-flex flex-column align-items-center mt-3">
+    <input type="text" name="name" class="form-control w-50 mb-3" placeholder="Enter your Name" required>
+    <input type="email" name="email" class="form-control w-50 mb-3" placeholder="Enter your email" required>
+    <button type="submit" class="btn btn-primary">Get in Touch</button>
+  </form>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row text-center text-md-start">
+
+      <div class="col-md-3 mb-4">
+        <h5>Stay Connected</h5>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-facebook-f social-icons"></i></a>
+          <a href="#"><i class="fab fa-twitter social-icons"></i></a>
+          <a href="#"><i class="fab fa-youtube social-icons"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in social-icons"></i></a>
+          <a href="#"><i class="fab fa-instagram social-icons"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h5>Get the Latest News</h5>
+        <form class="newsletter mt-3">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your email address" required>
+            <button class="btn" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2025 Vaibhav & co. 
+    <br>All rights reserved
+  </div>
+</footer>
+
+</body>
+</html>

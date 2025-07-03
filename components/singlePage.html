@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Single Page Website Builder</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- logo -->
+    <link rel="icon" href="../Assets/images/hexagon-logo-white.png">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- css and js -->
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+  <button class="btn btn-light btn-outline-dark sidebar-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+    <img src="../Assets/images/menu.png" alt="Menu" id="menuBtn">
+  </button>
+
+  <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title"><br>Add Components</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <h6 class="text-warning">Hero Section</h6>
+        <a href="#" class="nav-link text-white add-component" data-component="hero1">Hero 1</a>
+        <a href="#" class="nav-link text-white add-component" data-component="hero2">Hero 2</a>
+
+        <h6 class="text-warning">Testimonial Section</h6>
+        <a href="#" class="nav-link text-white add-component" data-component="test1">Testimonials 1</a>
+        <a href="#" class="nav-link text-white add-component" data-component="test2">Testimonials 2</a>
+        
+        <h6 class="text-warning">Contact Forms</h6>
+        <a href="#" class="nav-link text-white add-component" data-component="form1">Form 1</a>
+        <a href="#" class="nav-link text-white add-component" data-component="form2">Form 2</a>
+        
+        <h6 class="text-warning">Footer</h6>
+        <a href="#" class="nav-link text-white add-component" data-component="footer1">Footer 1</a>
+        <a href="#" class="nav-link text-white add-component" data-component="footer2">Footer 2</a>
+
+        <br>
+        <br>
+        <div class="mt-auto text-center p-3">
+          <button id="generateBtn" class="btn btn-warning w-100">Generate Website</button>
+        </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Preview Area -->
+  <div id="preview-area" class="container-fluid">
+    <div id="templateStorage" style="display: none;"></div>
+    <h2 class="text-muted mx-5 previewText">Your Page Preview Appears Here</h2>
+  </div>
+
+      <script src="../script.js"></script>
+</body>
+</html>

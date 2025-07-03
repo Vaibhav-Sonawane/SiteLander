@@ -1,0 +1,449 @@
+<!-- hero template1 -->
+<template id="hero1-template">
+  <section class="position-relative">
+    <div class="navbar navbar-expand-lg bg-dark-subtle shadow rounded p-3">
+      <a href="#" class="navbar-brand d-flex align-items-center" onclick="editLink(this, event)">
+        <img src="../Assets/images/logo.png" alt="Logo" width="40" height="40" class="me-2" onclick="editImage(this)">
+        <h4 class="mb-0" contenteditable="true">Brand Name</h4>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="NavContent">
+        <div class="custom-collapse d-flex justify-content-end ms-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#home" class="nav-link text-decoration-none text-dark" onclick="editLink(this, event)">
+                <i class="bi bi-house-door-fill"></i> <span contenteditable="true">Home</span>
+              </a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a href="#about" class="nav-link text-decoration-none text-dark" onclick="editLink(this, event)">
+                <i class="bi bi-file-person"></i> <span contenteditable="true">About</span>
+              </a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-decoration-none text-dark" onclick="editLink(this, event)">
+                <i class="bi bi-telephone-fill"></i> <span contenteditable="true">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content position-relative text-white text-center p-5" style="height: 100vh; background-color: #0d6efd;">
+      <h1 contenteditable="true" class="display-4 fw-bold">Hero 1</h1>
+      <p contenteditable="true" class="lead mt-3">
+        Full screen section. <br>
+        In this component you can add image or video as background and set position of text area.
+      </p>
+    </div>
+
+    <button class="btn btn-light btn-sm addBgBtn" style="position: absolute; bottom: 10px; left: 10px; z-index: 1000;" onclick="editBackground(this)">
+      Add Background
+    </button>
+    <button class="remove-section btn btn-light btn-sm" style="position: absolute; bottom: 10px; right: 10px; z-index: 1000;">
+      Remove Hero Section
+    </button>
+  </section>
+</template>
+
+
+<!-- hero template2 -->
+<template id="hero2-template">
+  <section class="container-fluid position-relative">
+
+    <div class="navbar navbar-expand-lg bg-dark-subtle shadow rounded-bottom">
+      <a href="#" class="navbar-brand d-flex align-items-center" onclick="editLink(this, event)">
+        <img src="../Assets/images/logo.png" alt="Logo" width="40" height="40" class="me-2" onclick="editImage(this)">
+        <h4 class="mb-0" contenteditable="true">Brand Name</h4>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="NavContent">
+        <div class="custom-collapse d-flex justify-content-end ms-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#home" class="nav-link text-dark" onclick="editLink(this, event)"><i class="bi bi-house-door-fill"></i> Home</a></li>
+            <hr>
+            <li class="nav-item"><a href="#about" class="nav-link text-dark" onclick="editLink(this, event)"><i class="bi bi-file-person"></i> About</a></li>
+            <hr>
+            <li class="nav-item"><a href="#contact" class="nav-link text-dark" onclick="editLink(this, event)"><i class="bi bi-telephone-fill"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-0">
+      <div class="col-md-8 bg-primary-subtle text-dark text-center position-relative" style="height: 100vh;">
+        <img src="../Assets/images/hero1.jpg" alt="Hero Image" class="img-fluid w-100 h-100" style="object-fit: cover;" onclick="editImage(this)">
+        <p contenteditable="true" class="position-absolute top-50 start-50 translate-middle text-bg-dark px-3 py-2 rounded">This is Image Area where you can add images</p>
+      </div>
+
+      <div class="col-md-4 bg-danger-subtle text-dark text-center p-5 d-flex flex-column justify-content-center" style="height: 100vh;">
+        <h2 contenteditable="true" class="fw-bold fs-1">Heading</h2>
+        <p contenteditable="true" class="fs-5 mb-3">This is Text Area where you can add text</p>
+
+      </div>
+    </div>
+
+    <button class="btn btn-light btn-sm addBgBtn" style="position: absolute; bottom: 10px; left: 10px; z-index: 1000;" onclick="editBackground(this)">
+      Add Background
+    </button>
+    <button class="remove-section btn btn-light btn-sm" style="position: absolute; bottom: 10px; right: 10px; z-index: 1000;">Remove Hero Section</button>
+  </section>
+</template>
+
+
+<!-- testimonial template1 -->
+<template id="test1-template">
+  <section class="p-5 bg-dark-subtle text-center position-relative">
+    <div id="carouselControl" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="../Assets/images/face1.jpg" alt="Avatar Img" class="img-fluid mb-3" 
+               style="max-width: 100px; border-radius: 50%;" onclick="editImage(this)">
+          <blockquote>
+            <p class="fst-italic" contenteditable="true">
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, omnis?"
+            </p>
+          </blockquote>
+          <h5 contenteditable="true">Radhe Shyam</h5>
+          <p contenteditable="true"><b>Founder,</b> <i>XYZ</i></p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../Assets/images/face2.jpg" alt="Avatar Img" class="img-fluid mb-3" 
+               style="max-width: 100px; border-radius: 50%;" onclick="editImage(this)">
+          <blockquote>
+            <p class="fst-italic" contenteditable="true">
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, omnis?"
+            </p>
+          </blockquote>
+          <h5 contenteditable="true">Adtiya Singh</h5>
+          <p contenteditable="true"><b>Founder,</b> <i>ABC</i></p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../Assets/images/face3.jpg" alt="Avatar Img" class="img-fluid mb-3" 
+               style="max-width: 100px; border-radius: 50%;" onclick="editImage(this)">
+          <blockquote>
+            <p class="fst-italic" contenteditable="true">
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, omnis?"
+            </p>
+          </blockquote>
+          <h5 contenteditable="true">Radhika Agrawal</h5>
+          <p contenteditable="true"><b>Founder,</b> <i>123</i></p>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselControl" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselControl" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <button class="remove-section btn btn-light btn-sm" style="position: absolute; bottom: 10px; right: 10px; z-index: 1000;">
+      Remove Testimonial Section
+    </button>
+  </section>
+</template>
+
+<!-- testimonial template2 -->
+<template id="test2-template">
+  <section class="p-5 bg-light text-center position-relative">
+    <div class="container">
+      <div class="scroll-wrapper" style="overflow-x: auto; white-space: nowrap; padding-bottom: 10px;">
+
+        <div class="card text-center bg-success-subtle rounded-4 shadow-sm d-inline-block m-2" style="width: 300px;">
+          <div class="card-header bg-success text-white rounded-top-4">
+            Featured Comments
+          </div>
+          <div class="card-body">
+            <img src="../Assets/images/face3.jpg" alt="Avatar" onclick="editImage(this)"
+                 style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;" class="mb-2">
+            <blockquote>
+              <p class="fst-italic" contenteditable="true">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            </blockquote>
+            <h5 contenteditable="true">Radhika Agrawal</h5>
+            <p contenteditable="true"><b>Founder,</b> <i>123</i></p>
+          </div>
+          <div class="card-footer text-white bg-success rounded-bottom-4">2 days ago</div>
+        </div>
+
+        <div class="card text-center bg-success-subtle rounded-4 shadow-sm d-inline-block m-2" style="width: 300px;">
+          <div class="card-header bg-success text-white rounded-top-4">
+            Featured Comments
+          </div>
+          <div class="card-body">
+            <img src="../Assets/images/face2.jpg" alt="Avatar" onclick="editImage(this)"
+                 style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;" class="mb-2">
+            <blockquote>
+              <p class="fst-italic" contenteditable="true">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            </blockquote>
+            <h5 contenteditable="true">Sharad Kulkarni</h5>
+            <p contenteditable="true"><b>Founder,</b> <i>ABC</i></p>
+          </div>
+          <div class="card-footer text-white bg-success rounded-bottom-4">4 days ago</div>
+        </div>
+
+        <div class="card text-center bg-success-subtle rounded-4 shadow-sm d-inline-block m-2" style="width: 300px;">
+          <div class="card-header bg-success text-white rounded-top-4">
+            Featured Comments
+          </div>
+          <div class="card-body">
+            <img src="../Assets/images/face1.jpg" alt="Avatar" onclick="editImage(this)"
+                 style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;" class="mb-2">
+            <blockquote>
+              <p class="fst-italic" contenteditable="true">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            </blockquote>
+            <h5 contenteditable="true">Sarabjeet Singh</h5>
+            <p contenteditable="true"><b>Founder,</b> <i>XYZ</i></p>
+          </div>
+          <div class="card-footer text-white bg-success rounded-bottom-4">1 week ago</div>
+        </div>
+
+        <div class="card text-center bg-success-subtle rounded-4 shadow-sm d-inline-block m-2" style="width: 300px;">
+          <div class="card-header bg-success text-white rounded-top-4">
+            Featured Comments
+          </div>
+          <div class="card-body">
+            <img src="../Assets/images/face4.jpg" alt="Avatar" onclick="editImage(this)"
+                 style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;" class="mb-2">
+            <blockquote>
+              <p class="fst-italic" contenteditable="true">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            </blockquote>
+            <h5 contenteditable="true">Anjali Mehta</h5>
+            <p contenteditable="true"><b>CEO,</b> <i>DEF Inc.</i></p>
+          </div>
+          <div class="card-footer text-white bg-success rounded-bottom-4">3 days ago</div>
+        </div>
+
+        <div class="card text-center bg-success-subtle rounded-4 shadow-sm d-inline-block m-2" style="width: 300px;">
+          <div class="card-header bg-success text-white rounded-top-4">
+            Featured Comments
+          </div>
+          <div class="card-body">
+            <img src="../Assets/images/face5.jpg" alt="Avatar" onclick="editImage(this)"
+                 style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;" class="mb-2">
+            <blockquote>
+              <p class="fst-italic" contenteditable="true">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            </blockquote>
+            <h5 contenteditable="true">Hetal Patel</h5>
+            <p contenteditable="true"><b>CEO,</b> <i>MNC Corp.</i></p>
+          </div>
+          <div class="card-footer text-white bg-success rounded-bottom-4">3 days ago</div>
+        </div>
+
+        <div class="card text-center bg-success-subtle rounded-4 shadow-sm d-inline-block m-2" style="width: 300px;">
+          <div class="card-header bg-success text-white rounded-top-4">
+            Featured Comments
+          </div>
+          <div class="card-body">
+            <img src="../Assets/images/face6.jpg" alt="Avatar" onclick="editImage(this)"
+                 style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;" class="mb-2">
+            <blockquote>
+              <p class="fst-italic" contenteditable="true">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            </blockquote>
+            <h5 contenteditable="true">Rajaram Kapoor</h5>
+            <p contenteditable="true"><b>CEO,</b> <i>654 Pvt.</i></p>
+          </div>
+          <div class="card-footer text-white bg-success rounded-bottom-4">1 day ago</div>
+        </div>
+
+        <div class="card text-center bg-success-subtle rounded-4 shadow-sm d-inline-block m-2" style="width: 300px;">
+          <div class="card-header bg-success text-white rounded-top-4">
+            Featured Comments
+          </div>
+          <div class="card-body">
+            <img src="../Assets/images/face2.jpg" alt="Avatar" onclick="editImage(this)"
+                 style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;" class="mb-2">
+            <blockquote>
+              <p class="fst-italic" contenteditable="true">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            </blockquote>
+            <h5 contenteditable="true">Vikram Raj</h5>
+            <p contenteditable="true"><b>CEO,</b> <i>987 Ltd.</i></p>
+          </div>
+          <div class="card-footer text-white bg-success rounded-bottom-4">10 days ago</div>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="remove-section btn btn-dark btn-sm" style="position:absolute; bottom:10px; right:10px;">
+      Remove Testimonial Section
+    </button>
+  </section>
+</template>
+
+
+
+<!-- form template1 -->
+<template id="form1-template">
+  <section class="p-4 bg-dark text-white rounded position-relative shadow-lg" 
+    style="max-width: 50%; margin: auto; background: linear-gradient(to right, #141E30, #243B55); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 0 10px rgba(255,255,255,0.05);">
+
+    <div class="row">
+      <div class="col col-md-6">
+        <h3 class="text-pink fw-bold" style="text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.2);" contenteditable="true">
+          Get in Contact With Us!
+        </h3>
+        <p class="text-light mb-4" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);" contenteditable="true">
+          Let us know more about you!
+        </p>
+
+        <form>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control bg-info-subtle text-white border-0 rounded-pill" required placeholder="First Name">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control bg-info-subtle text-white border-0 rounded-pill" required placeholder="Last Name">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control bg-info-subtle text-white border-0 rounded-pill" required placeholder="Mail">
+            </div>
+            <div class="col-md-6">
+              <input type="tel" class="form-control bg-info-subtle text-white border-0 rounded-pill" required placeholder="Phone">
+            </div>
+            <div class="col-12">
+              <textarea rows="4" class="form-control bg-info-subtle text-white border-0 rounded" required placeholder="Message"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-pink text-white px-4 rounded-pill">SUBMIT</button>
+        </form>
+      </div>
+      <div class="col col-md-6">
+        <div style="background: rgba(255,255,255,0.05); border-radius: 10px; padding: 10px;">
+          <img src="../Assets/images/stockImg.png" alt="stockImg" class="img-fluid rounded shadow" style="height: 100%;" onclick="editImage(this)">
+        </div>
+      </div>
+    </div>
+
+    <button class="remove-section btn btn-light btn-sm position-absolute" style="bottom: 10px; right: 10px; z-index: 1000;">Remove Section</button>
+  </section>
+</template>
+
+<!-- form template2 -->
+<template id="form2-template">
+  <section class="p-4 bg-warning-subtle text-white rounded position-relative shadow-sm"
+    style="max-width: 500px; margin: auto; background: linear-gradient(to right, #f7b733, #fc4a1a); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+    <h3 class="text-dark fw-bold" contenteditable="true" style="text-shadow: 1px 1px 3px rgba(255,255,255,0.3);">
+      Get in Contact With Us!
+    </h3>
+    <p class="text-danger-emphasis mb-4" contenteditable="true" style="text-shadow: 0.5px 0.5px 2px rgba(0,0,0,0.2);">
+      Let us know more about you!
+    </p>
+
+    <form>
+      <div class="row g-3 mb-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control bg-dark-subtle text-white border-0 rounded-pill" required placeholder="Name">
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control bg-dark-subtle text-white border-0 rounded-pill" required placeholder="Email">
+        </div>
+        <div class="col-12">
+          <textarea rows="4" class="form-control bg-dark-subtle text-white border-0 rounded" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-pink text-dark-emphasis px-4 rounded-pill border-danger-subtle">SUBMIT</button>
+    </form>
+
+    <button class="remove-section btn btn-light btn-sm position-absolute" style="bottom: 10px; right: 10px;">Remove Section</button>
+  </section>
+</template>
+
+
+<!-- footer template1 -->
+<template id="footer1-template">
+  <section class="position-relative">
+    <footer class="bg-dark text-white text-center p-4">
+      <div class="row bg-info-subtle text-dark">
+        <div class="col col-md-4">
+          <h3 class="fw-bold" contenteditable="true">Connect on Socials</h3>
+          <div class="d-flex justify-content-center">
+            <a href="#" onclick="editLink(this, event)" class="text-dark-emphasis mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" onclick="editLink(this, event)" class="text-dark-emphasis mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" onclick="editLink(this, event)" class="text-dark-emphasis mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" onclick="editLink(this, event)" class="text-dark-emphasis mx-2"><i class="bi bi-linkedin"></i></a>
+            <a href="#" onclick="editLink(this, event)" class="text-dark-emphasis mx-2"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col col-md-8">
+          <h3 class="fw-bold" contenteditable="true">Address</h3>
+          <p contenteditable="true">123 Main Street, City, Country</p>
+          <p contenteditable="true">Phone: +91 789456123</p>
+          <p contenteditable="true">Email: pageBuilderS@example.com</p>
+        </div>
+      </div>
+      <p contenteditable="true">Copyright &copy; 2025</p>
+      <p contenteditable="true">All rights reserved</p>
+    </footer>
+
+    <button class="remove-section btn btn-light btn-sm position-absolute" style="bottom: 10px; right: 10px;">Remove Section</button>
+  </section>
+</template>
+
+<!-- footer template2 -->
+<template id="footer2-template">
+  <section class="position-relative">
+    <footer class="bg-dark text-white text-center p-4">
+      <div class="row bg-info-subtle text-dark">
+        <div class="col col-md-5">
+          <div>
+            <h3 class="fw-bold" contenteditable="true">Connect on Socials</h3>
+            <div class="d-flex justify-content-center">
+              <a href="#" onclick="editLink(this, event)" class="text-dark-emphasis mx-2"><i class="bi bi-twitter"></i></a>
+              <a href="#" onclick="editLink(this, event)" class="text-dark-emphasis mx-2"><i class="bi bi-facebook"></i></a>
+              <a href="#" onclick="editLink(this, event)" class="text-dark-emphasis mx-2"><i class="bi bi-instagram"></i></a>
+              <a href="#" onclick="editLink(this, event)" class="text-dark-emphasis mx-2"><i class="bi bi-linkedin"></i></a>
+              <a href="#" onclick="editLink(this, event)" class="text-dark-emphasis mx-2"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+          <hr>
+          <div>
+            <h3 class="fw-bold" contenteditable="true">Visit Us</h3>
+            <p contenteditable="true">123 Main Street, City, Country</p>
+            <p contenteditable="true">Phone: +91 789456123</p>
+            <p contenteditable="true">Email: pageBuilderS@example.com</p>
+          </div>
+        </div>
+
+        <div class="col col-md-7">
+          <h3 class="fw-bold" contenteditable="true">JOIN FOR MONTHLY UPDATES</h3>
+          <form class="d-flex justify-content-center align-items-center">
+            <div class="row border-danger">
+              <div class="col col-12 mt-4">
+                <input type="text" class="form-control bg-success-subtle text-white border-0 rounded-pill border-danger-subtle" required placeholder="Name">
+              </div>
+              <div class="col col-12 mt-4">
+                <input type="email" class="form-control bg-success-subtle text-white border-0 rounded-pill border-danger-subtle" required placeholder="Email">
+              </div>
+              <div class="col col-12 mt-4">
+                <button type="submit" class="btn btn-pink px-4 rounded-pill border-danger-subtle">SUBMIT</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <p contenteditable="true">Copyright &copy; 2025</p>
+      <p contenteditable="true">All rights reserved</p>
+    </footer>
+
+    <button class="remove-section btn btn-light btn-sm position-absolute" style="bottom: 10px; right: 10px;">
+      Remove Section
+    </button>
+  </section>
+</template>
+
